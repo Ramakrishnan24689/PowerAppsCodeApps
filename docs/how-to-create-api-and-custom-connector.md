@@ -7,7 +7,7 @@ This guide walks you through creating a simple mock API for an asset management 
 ## Prerequisites
 
 - Access to the [Azure Portal](https://portal.azure.com)
-- Power Platform environment with Code Apps enabled
+- [Power Platform environment with Code Apps enabled](../README.md#enable-code-apps-on-a-power-platform-environment)
 
 ## Create a New Azure Function in the Azure Portal 
 

@@ -6,7 +6,7 @@ This guide covers:
 
 ## Prerequisites
 
-- Power Platform environment with Code Apps enabled
+- [Power Platform environment with Code Apps enabled](../README.md#enable-code-apps-on-a-power-platform-environment)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Node.js](https://nodejs.org/) (LTS version)
 - [Power Platform Tools for VS Code](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction)
@@ -106,13 +106,7 @@ This guide covers:
 
 > [!NOTE] You can also use the Power Platform Tools VS Code Extension to do this.
 
-2. If you do not already have an environment, **create one** in the first release environment:
-
-   ```powershell
-   pac admin create --name 'Code Apps' --region 'unitedstatesfirstrelease' --type 'Developer'
-   ```
-
-3. **Select** your environment using:
+2. **Select** your environment using:
 
    ```powershell
    pac env select -env <URL of your environment>
@@ -120,7 +114,7 @@ This guide covers:
 
    You can also use the Power Platform Tools VS Code Extension to select the Environment
 
-4. **Initialize** your code app using:
+3. **Initialize** your code app using:
 
    ```powershell
    pac code init --displayName "App From Scratch"
@@ -128,14 +122,14 @@ This guide covers:
 
    Notice that there is now a `power.config.json` file in your project.
 
-5. **Install** the Power SDK using:
+4. **Install** the Power SDK using:
 
    ```powershell
    npm install --save-dev "@pa-client/power-code-sdk@https://github.com/microsoft/PowerAppsCodeApps/releases/download/v0.0.4/7-31-pa-client-power-code-sdk-0.0.1.tgz"
    ```
 > [!IMPORTANT] This SDK is currently not yet available on `npmjs.com` and must be installed from the GitHub release.
 
-6. **Open** the `package.json`, and update the existing line:
+5. **Open** the `package.json`, and update the existing line:
 
    ```json
    "dev": "vite"
@@ -148,17 +142,17 @@ This guide covers:
 
    Save the updated `pacakage.json`.
 
-7. **Add a new file** under the `src` folder named `PowerProvider.tsx` and grab the code from [PowerProvider.tsx](./assets/PowerProvider.tsx)
+6. **Add a new file** under the `src` folder named `PowerProvider.tsx` and grab the code from [PowerProvider.tsx](./assets/PowerProvider.tsx)
 
-8. **Save** the file.
+7. **Save** the file.
 
-9. **Open** `main.tsx` and add the following import under the existing imports:
+8. **Open** `main.tsx` and add the following import under the existing imports:
 
    ```
    import PowerProvider from './PowerProvider.tsx'
    ```
 
-10. **Update** `main.tsx`
+9. **Update** `main.tsx`
 
    ```
    <StrictMode>
@@ -176,9 +170,9 @@ This guide covers:
    </StrictMode>,
    ```
 
-11. **Save** the file
+10. **Save** the file
 
-12. You can now test the Code App by using:
+11. You can now test the Code App by using:
     ```
     npm run dev
     ```
@@ -186,8 +180,8 @@ This guide covers:
     This will run the vite server, but also start the Power SDK server:  
     ![image-20250601130305464](./assets/sql-testapp)
 
-13. Open the URL provided by the Power SDK Server.
+12. Open the URL provided by the Power SDK Server.
     Important: Open the url in the same browser profile as your power platform tenant.
 
-14. You should see the app open similar to:  
+13. You should see the app open similar to:  
     ![image-20250530184403975](./assets/sql-vite-running-powerapps)

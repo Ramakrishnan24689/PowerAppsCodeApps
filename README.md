@@ -2,7 +2,6 @@
 
 > ⚡ **Quick start** 
 >
-> - [How to create a First Release Environment](#create-a-first-release-power-platform-environment) - Get an environment ready to run Code Apps!
 > - [Start in minutes with a Hello World sample code](samples/HelloWorld/README.md) - A ready to run React sample, with minimum setps to run on Power Apps.
 > 
 > 📂 **Samples**
@@ -23,6 +22,9 @@
 > - [How to create sample api and a custom connector](docs/how-to-create-api-and-custom-connector.md) - Quickly create a mock api and a custom connector to test Code Apps with Custom Connectors.
 
 > - [How to connect to Dataverse](docs/how-to-connect-to-dataverse.md) - Step-by-step guide to connect your code app to Microsoft Dataverse using the Power Apps SDK.
+>
+>   **Feedback**
+>   - Email: paCodeAppPreview@microsoft.com
 
 Power Apps empowers developers of all skillsets—including those building web apps in IDEs like Visual Studio Code—to efficiently build and run business apps on a managed platform.
 
@@ -37,14 +39,12 @@ Power Apps empowers developers of all skillsets—including those building web a
 
 The managed platform accelerates innovation in safe environments. When ready, apps can be deployed to dedicated production environments. Code Apps and the managed platform reinforce safe, rapid innovation, and, when ready, these apps can be deployed to dedicated production environments.
 
-[**Sign up for Early Access**](https://aka.ms/paCodeAppsEAP)
-
 # 📑 Table of Contents 
 
 - [What are code apps?](#what-are-code-apps-)
 - [Prerequisites](#prerequisites-)
   - [Install the following developer tools](#install-the-following-developer-tools)
-  - [Create a first release Power Platform environment](#create-a-first-release-power-platform-environment)
+  - [Enable code apps on a Power Platform environment](#enable-code-apps-on-a-power-platform-environment)
   - [License end-users with Power Apps Premium](#license-end-users-with-power-apps-premium)
 - [Limitations](#limitations)
 - [See also](#see-also)
@@ -72,25 +72,28 @@ Code apps require several developer tools like Visual Studio Code, git, dotnet, 
 - [Git](https://git-scm.com/)
 - [Power Apps CLI](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction)
 
-## Create a first release Power Platform environment 
+## Enable code apps on a Power Platform environment
+Code apps can be enabled via environment setting which can be set by Power Platform Admins and environment admins. The environment setting respects groups and rules set by Power Platform Admins. 
+1. As an admin, go to https://admin.powerplatform.microsoft.com
+2. Navigate to Manage > Environments > select the environment where you will use code apps
+3. Navigate to Settings >  Expand the Product subsection > Select Features
+4. Navigate to the feature "Power Apps Code Apps" and use the "Enable code apps" toggle for enablement.
+5. Click "Save" in the settings experience.  
 
-First release environments are intended for non-production use and they receive Power Platform updates before other environments. For code apps EAP, it's recommended that you use a first release environment (it is required for SQL connector). Code app capabilities will eventually be available to all environments. Code apps require dataverse to exist in the environment.  
+<img width="1022" height="369" alt="image" src="https://github.com/user-attachments/assets/a215b7fe-acf4-4082-b7a7-2a7995970a9a" />
 
-> [!IMPORTANT] Early access preview participants must inform Microsoft of the first release environment you want code apps enabled.
 
-### Option 1 - Create a first release environment using PAC CLI
+>[!NOTE]
+> If the Power Apps Code Apps setting doesn't appear in the admin center UI it is because a UI update hasn't reached your environment yet. You can get the setting to appear by appending a query string to the admin center URI.
+>E.g.
+><pre>
+>https://admin.powerplatform.microsoft.com/manage/environments/1c137ea4-049e-ef11-8a66-000d3a106833/settings/Features
+> to
+>https://admin.powerplatform.microsoft.com/manage/environments/1c137ea4-049e-ef11-8a66-000d3a106833/settings/Features<b>?ecs.ShowCodeAppSetting=true</b>
+></pre>
 
-```PowerShell
-pac admin create --name 'Code Apps' --region 'unitedstatesfirstrelease' --type 'Developer'
-```
+<img width="1031" height="332" alt="image" src="https://github.com/user-attachments/assets/45d3f1d9-56e3-41e9-82cc-4d8fbb30bb79" />
 
-### Option 2 - Create a first release environment using command line
-
-Be sure to set LocationName to “unitedstatesfirstrelease”. [Learn more](https://learn.microsoft.com/power-platform/admin/powerapps-powershell)
-
-```PowerShell
-New-AdminPowerAppEnvironment -DisplayName "Code App env" -EnvironmentSku Trial -LocationName "unitedstatesfirstrelease" -ProvisionDatabase 
-```
 
 ## License end-users with Power Apps Premium
 
