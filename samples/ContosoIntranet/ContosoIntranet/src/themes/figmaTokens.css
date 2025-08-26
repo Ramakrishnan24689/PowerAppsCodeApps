@@ -1,0 +1,115 @@
+/* Figma Communication Site - Custom CSS Properties */
+/* Use these for Figma-specific tokens that extend beyond Fluent UI v9 theme */
+
+:root {
+  /* Suite Header - Figma Brand Colors */
+  --color-suite-header-background: #303952;
+  --color-suite-header-brand-accent: #25baba;
+  --color-tenant-background: #03787c;
+  
+  /* Navigation & AppBar - Figma Specifications */
+  --color-app-bar-background: #f3f2f1;
+  --color-app-bar-foreground: #605e5c;
+  --color-app-bar-border: #edebe9;
+  
+  /* Site Header - Figma Layout */
+  --color-site-header-background: #ffffff;
+  --color-site-header-foreground: #03787c;
+  --height-site-header: 108px;
+  --height-suite-header: 48px;
+  
+  /* Content Areas - Figma Color System */
+  --color-content-background: #ffffff;
+  --color-card-background: #ffffff;
+  --color-card-border: #e1dfdd;
+  
+  /* Industry News - Figma Component Colors */
+  --color-industry-news-background: #f0f9fa;
+  --color-industry-news-thumbnail: #c5e9ea;
+  
+  /* Component Dimensions - Figma Layout Specs */
+  --width-app-bar: 48px;
+  --width-side-navigation: 272px;
+  --height-toolbar-button: 32px;
+  --height-app-bar-button: 48px;
+  
+  /* Figma Z-Index System */
+  --z-index-suite-header: 1000;
+  --z-index-app-bar: 900;
+  --z-index-site-header: 800;
+  --z-index-navigation: 700;
+  --z-index-content: 1;
+}
+
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+  --color-suite-header-background: #1f1f1f;
+  --color-app-bar-background: #2d2d2d;
+  --color-app-bar-foreground: #d2d0ce;
+  --color-app-bar-border: #404040;
+  --color-site-header-background: #1f1f1f;
+  --color-site-header-foreground: #28b1b5;
+  --color-content-background: #1f1f1f;
+  --color-card-background: #2d2d2d;
+  --color-card-border: #404040;
+  --color-industry-news-background: #1a2b2c;
+  --color-industry-news-thumbnail: #0f1f20;
+}
+
+/* Responsive Breakpoints - Figma Design System */
+/* Mobile: 0-767px */
+/* Tablet: 768-1023px */  
+/* Desktop: 1024-1365px */
+/* Large Desktop: 1366px+ */
+
+@media (max-width: 767px) {
+  :root {
+    --width-side-navigation: 100vw;
+    --height-app-bar-button: 44px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --width-side-navigation: 320px;
+  }
+}
+
+/* Component-specific Figma tokens */
+.figma-suite-header {
+  background-color: var(--color-suite-header-background);
+  height: var(--height-suite-header);
+  z-index: var(--z-index-suite-header);
+}
+
+.figma-app-bar {
+  background-color: var(--color-app-bar-background);
+  border-color: var(--color-app-bar-border);
+  width: var(--width-app-bar);
+  z-index: var(--z-index-app-bar);
+}
+
+.figma-site-header {
+  background-color: var(--color-site-header-background);
+  color: var(--color-site-header-foreground);
+  height: var(--height-site-header);
+  z-index: var(--z-index-site-header);
+}
+
+.figma-content-area {
+  background-color: var(--color-content-background);
+  z-index: var(--z-index-content);
+}
+
+.figma-card {
+  background-color: var(--color-card-background);
+  border-color: var(--color-card-border);
+}
+
+.figma-industry-news {
+  background-color: var(--color-industry-news-background);
+}
+
+.figma-industry-news-thumbnail {
+  background-color: var(--color-industry-news-thumbnail);
+}

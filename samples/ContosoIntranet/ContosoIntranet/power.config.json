@@ -1,0 +1,65 @@
+{
+  "appId": "88459bb1-89dc-4e0f-bba0-4256faf86661",
+  "appDisplayName": "ContosoIntranet",
+  "description": null,
+  "environmentId": "9a58a54f-42ad-ed5c-8bbc-318f6c452a1c",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "../assets/SharePoint.svg",
+  "localAppUrl": "http://localhost:3000/",
+  "connectionReferences": {
+    "ef437689f1b34386b17196f65541e9da": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "displayName": "SharePoint",
+      "dataSources": [
+        "contosotasks",
+        "contosohero",
+        "contosonews",
+        "contosoquicklinks",
+        "contosotrending",
+        "contosonewshub",
+        "contosoevents"
+      ],
+      "authenticationType": null,
+      "sharedConnectionId": null,
+      "dataSets": {
+        "https%253A%252F%252Fpowercattools.sharepoint.com%252Fsites%252FContosoIntranet%252F": {
+          "dataSources": {
+            "contosotasks": {
+              "tableName": "6682aeb3-589f-48cc-ab3b-0a7d9a20a3e9"
+            },
+            "contosohero": {
+              "tableName": "26301372-e41d-493a-9a13-99bced7ba9da"
+            },
+            "contosonews": {
+              "tableName": "35e5b826-fddd-42a9-8b55-7374c6202732"
+            },
+            "contosoquicklinks": {
+              "tableName": "37fb417a-b537-4ab4-808e-6faa5473dcb7"
+            },
+            "contosotrending": {
+              "tableName": "f8e9318d-9cd9-4ae9-b7b9-1a56d6e5b180"
+            },
+            "contosonewshub": {
+              "tableName": "51b4a1e6-1a0d-4056-9e96-d5569b4b13ad"
+            },
+            "contosoevents": {
+              "tableName": "abc6abb1-ac68-40f8-8df9-5f4f8aeee8e2"
+            }
+          }
+        }
+      }
+    },
+    "3846bd22-af8b-40eb-8d3f-91f30c8ef7a1": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_office365users",
+      "displayName": "Office 365 Users",
+      "dataSources": [
+        "office365users"
+      ],
+      "authenticationType": null,
+      "sharedConnectionId": null,
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {}
+}

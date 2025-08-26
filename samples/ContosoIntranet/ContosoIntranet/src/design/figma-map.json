@@ -1,0 +1,296 @@
+{
+  "figma": {
+    "nodes": {
+      "TaskListPage": {
+        "nodeId": "2123:317659",
+        "name": "Template",
+        "description": "Complete task list page with trending project cards and task management table",
+        "sections": {
+          "pageTitle": "2109:303703",
+          "trendingSection": "2109:303706",
+          "trendingCards": "2109:303708",
+          "allTasksSection": "2109:303713",
+          "toolbar": "2109:303715",
+          "taskTable": "2109:303716"
+        }
+      }
+    },
+    "typography": {
+      "Medium/400": {
+        "family": "Segoe UI",
+        "style": "Regular",
+        "size": "14px",
+        "weight": 400,
+        "lineHeight": "20px",
+        "fluentToken": "body1"
+      }
+    },
+    "colors": {
+      "Other/Tenant/white": {
+        "value": "#ffffff",
+        "fluentToken": "colorNeutralForegroundInverted"
+      },
+      "BrandBackground.Rest": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--suite-header-tenant-bg"
+      },
+      "Other/Tenant/neutralTertiary": {
+        "value": "#fafafa",
+        "fluentToken": "colorNeutralBackground1"
+      },
+      "Global.Color.NeutralShadowAmbientBrand": {
+        "value": "#00000024",
+        "fluentToken": "colorNeutralShadowAmbient"
+      },
+      "Global.Color.NeutralShadowAmbient": {
+        "value": "#0000001f",
+        "fluentToken": "colorNeutralShadowKey"
+      },
+      "Other/Tenant/neutralSecondary": {
+        "value": "#616161",
+        "fluentToken": "colorNeutralForeground2"
+      },
+      "Other/Tenant/brandAccent": {
+        "value": "#25baba",
+        "fluentToken": null,
+        "customProperty": "--suite-header-brand-accent"
+      },
+      "Other/Tenant/brandPrimary": {
+        "value": "#303952",
+        "fluentToken": null,
+        "customProperty": "--suite-header-brand-primary"
+      },
+      "NeutralForeground2.Rest": {
+        "value": "#605e5c",
+        "fluentToken": "colorNeutralForeground2",
+        "customProperty": "--figma-NeutralForeground2-Rest"
+      },
+      "NeutralStroke4.Rest": {
+        "value": "#edebe9",
+        "fluentToken": "colorNeutralStroke4",
+        "customProperty": "--figma-NeutralStroke4-Rest"
+      },
+      "NeutralBackground4.Rest": {
+        "value": "#f3f2f1",
+        "fluentToken": "colorNeutralBackground4",
+        "customProperty": "--figma-NeutralBackground4-Rest"
+      },
+      "BrandForeground1.Rest": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--brand-foreground-1"
+      },
+      "NeutralForeground1.Rest": {
+        "value": "#323130",
+        "fluentToken": "colorNeutralForeground1"
+      },
+      "NeutralStroke2.Rest": {
+        "value": "#e1dfdd",
+        "fluentToken": "colorNeutralStroke2"
+      },
+      "Footer.Background": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--footer-background"
+      },
+      "Footer.Logo.Background": {
+        "value": "#ffffff",
+        "fluentToken": "colorNeutralBackground1"
+      },
+      "Footer.Logo.Text": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--footer-logo-text"
+      },
+      "Footer.Text": {
+        "value": "#ffffff",
+        "fluentToken": "colorNeutralForegroundInverted"
+      },
+      "Hero.Title.Main": {
+        "value": "28px",
+        "fluentToken": null,
+        "customProperty": "--hero-title-main-size"
+      },
+      "Hero.Title.Small": {
+        "value": "20px", 
+        "fluentToken": null,
+        "customProperty": "--hero-title-small-size"
+      },
+      "Hero.Gradient": {
+        "value": "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.49) 100%)",
+        "fluentToken": null,
+        "customProperty": "--hero-gradient"
+      },
+      "News.Kicker.Background": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--news-kicker-bg"
+      },
+      "News.Title.Size": {
+        "value": "16px",
+        "fluentToken": null,
+        "customProperty": "--news-title-size"
+      },
+      "News.Body.Size": {
+        "value": "14px",
+        "fluentToken": null,
+        "customProperty": "--news-body-size"
+      },
+      "News.Caption.Size": {
+        "value": "12px",
+        "fluentToken": null,
+        "customProperty": "--news-caption-size"
+      },
+      "Events.Card.Background": {
+        "value": "#ffffff",
+        "fluentToken": "colorNeutralBackground1"
+      },
+      "Events.Card.Border": {
+        "value": "#e1dfdd",
+        "fluentToken": "colorNeutralStroke2"
+      },
+      "Events.Card.Shadow": {
+        "value": "0px 2px 4px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12)",
+        "fluentToken": null,
+        "customProperty": "--events-card-shadow"
+      },
+      "Events.Date.Primary": {
+        "value": "#323130",
+        "fluentToken": "colorNeutralForeground1"
+      },
+      "Events.Date.Size.Large": {
+        "value": "42px",
+        "fluentToken": null,
+        "customProperty": "--events-date-large-size"
+      },
+      "Events.Date.Size.Medium": {
+        "value": "18px",
+        "fluentToken": null,
+        "customProperty": "--events-date-medium-size"
+      },
+      "Events.Title.Size": {
+        "value": "20px",
+        "fluentToken": null,
+        "customProperty": "--events-title-size"
+      },
+      "Events.Category.Size": {
+        "value": "12px",
+        "fluentToken": null,
+        "customProperty": "--events-category-size"
+      },
+      "Events.Pagination.Active": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--events-pagination-active"
+      },
+      "IndustryNews.Background": {
+        "value": "#f0f9fa",
+        "fluentToken": null,
+        "customProperty": "--industry-news-bg"
+      },
+      "IndustryNews.Text.Color": {
+        "value": "#323130",
+        "fluentToken": "colorNeutralForeground1"
+      },
+      "IndustryNews.Headline.Size": {
+        "value": "28px",
+        "fluentToken": null,
+        "customProperty": "--industry-news-headline-size"
+      },
+      "IndustryNews.Subtitle.Size": {
+        "value": "20px",
+        "fluentToken": null,
+        "customProperty": "--industry-news-subtitle-size"
+      },
+      "IndustryNews.Description.Size": {
+        "value": "18px",
+        "fluentToken": null,
+        "customProperty": "--industry-news-description-size"
+      },
+      "IndustryNews.Card.Background": {
+        "value": "#ffffff",
+        "fluentToken": "colorNeutralBackground1"
+      },
+      "IndustryNews.Card.Border": {
+        "value": "1px solid #e1dfdd",
+        "fluentToken": null,
+        "customProperty": "--industry-news-card-border"
+      },
+      "IndustryNews.Card.Shadow": {
+        "value": "0px 2px 4px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12)",
+        "fluentToken": null,
+        "customProperty": "--industry-news-card-shadow"
+      },
+      "IndustryNews.Thumbnail.Background": {
+        "value": "#c5e9ea",
+        "fluentToken": null,
+        "customProperty": "--industry-news-thumbnail-bg"
+      },
+      "IndustryNews.Pagination.Active": {
+        "value": "#03787c",
+        "fluentToken": null,
+        "customProperty": "--industry-news-pagination-active"
+      },
+      "TaskList.Page.Background": {
+        "value": "#ffffff",
+        "fluentToken": "colorNeutralBackground1"
+      },
+      "TaskList.Text.Primary": {
+        "value": "#242424",
+        "fluentToken": "colorNeutralForeground1"
+      },
+      "TaskList.Text.Secondary": {
+        "value": "#616161",
+        "fluentToken": "colorNeutralForeground3"
+      },
+      "TaskList.Text.Link": {
+        "value": "#115ea3",
+        "fluentToken": null,
+        "customProperty": "--task-list-text-link"
+      },
+      "TaskList.Card.Shadow": {
+        "value": "0px 2px 4px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12)",
+        "fluentToken": null,
+        "customProperty": "--task-list-card-shadow"
+      },
+      "TaskList.Grid.Border": {
+        "value": "1px solid #e0e0e0",
+        "fluentToken": null,
+        "customProperty": "--task-list-grid-border"
+      },
+      "TaskList.Page.Title.Size": {
+        "value": "20px",
+        "fluentToken": null,
+        "customProperty": "--task-list-page-title-size"
+      },
+      "TaskList.Section.Title.Size": {
+        "value": "16px",
+        "fluentToken": null,
+        "customProperty": "--task-list-section-title-size"
+      },
+      "TaskList.Card.Title.Size": {
+        "value": "14px",
+        "fluentToken": null,
+        "customProperty": "--task-list-card-title-size"
+      },
+      "TaskList.Task.Title.Size": {
+        "value": "14px",
+        "fluentToken": null,
+        "customProperty": "--task-list-task-title-size"
+      }
+    },
+    "radius": {
+      "Circular": {
+        "value": "9999px",
+        "fluentToken": "borderRadiusCircular"
+      }
+    },
+    "shadows": {
+      "searchField": {
+        "value": "0px 1px 2px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12)",
+        "fluentToken": "shadow4"
+      }
+    }
+  }
+}

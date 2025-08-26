@@ -1,0 +1,190 @@
+/* Custom design tokens extracted from Figma */
+:root {
+  /* Suite Header specific tokens */
+  --suite-header-tenant-bg: #03787c;
+  --suite-header-brand-accent: #25baba;
+  --suite-header-brand-primary: #303952;
+  
+  /* Suite Header layout */
+  --suite-header-height: 48px;
+  --suite-header-button-size: 48px;
+  
+  /* App Bar specific tokens */
+  --figma-NeutralForeground2-Rest: #605e5c;
+  --figma-NeutralStroke4-Rest: #edebe9;
+  --figma-NeutralBackground4-Rest: #f3f2f1;
+  
+  /* App Bar layout */
+  --app-bar-width: 48px;
+  
+  /* Site Header specific tokens */
+  --brand-primary: #03787c;
+  --brand-foreground-1: #03787c;
+  
+  /* Site Header layout */
+  --site-header-hub-nav-height: 40px;
+  --site-header-main-height: 108px;
+  
+  /* Footer specific tokens */
+  --footer-background: #03787c;
+  --footer-logo-text: #03787c;
+  
+  /* Hero specific tokens */
+  --hero-title-main-size: 28px;
+  --hero-title-small-size: 20px;
+  --hero-gradient: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.49) 100%);
+  
+  /* News specific tokens */
+  --news-kicker-bg: #03787c;
+  --news-title-size: 16px;
+  --news-body-size: 14px;
+  --news-caption-size: 12px;
+  
+  /* Events specific tokens */
+  --events-card-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12);
+  --events-date-large-size: 42px;
+  --events-date-medium-size: 18px;
+  --events-title-size: 20px;
+  --events-category-size: 12px;
+  --events-pagination-active: #03787c;
+
+  /* Industry News specific tokens */
+  --industry-news-bg: #f0f9fa;
+  --industry-news-text-color: #323130;
+  --industry-news-headline-size: 28px;
+  --industry-news-headline-weight: 600;
+  --industry-news-headline-line-height: 36px;
+  --industry-news-subtitle-size: 20px;
+  --industry-news-subtitle-weight: 600;
+  --industry-news-subtitle-line-height: 24px;
+  --industry-news-description-size: 18px;
+  --industry-news-description-weight: 400;
+  --industry-news-description-line-height: 1.4;
+  --industry-news-column-gap: 32px;
+  --industry-news-padding: 32px 57px;
+  --industry-news-left-width: 380px;
+  --industry-news-right-width: 792px;
+  --industry-news-text-gap: 12px;
+  --industry-news-content-gap: 18px;
+  --industry-news-quicklinks-gap: 32px;
+  --industry-news-cards-gap: 24px;
+  --industry-news-card-bg: #ffffff;
+  --industry-news-card-border: 1px solid #e1dfdd;
+  --industry-news-card-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12);
+  --industry-news-card-radius: 4px;
+  --industry-news-card-padding: 12px 14px;
+  --industry-news-card-border-top: 1px solid #edebe9;
+  --industry-news-card-title-size: 14px;
+  --industry-news-card-title-weight: 600;
+  --industry-news-card-title-line-height: 20px;
+  --industry-news-thumbnail-bg: #c5e9ea;
+  --industry-news-iterator-bg: rgba(20, 20, 20, 0.65);
+  --industry-news-pagination-gap: 24px;
+  --industry-news-pagination-border: #323130;
+  --industry-news-pagination-active: #03787c;
+
+  /* Task List Page specific tokens */
+  --task-list-page-bg: #ffffff;
+  --task-list-page-padding: 20px;
+  --task-list-page-gap: 40px;
+  --task-list-text-primary: #242424;
+  --task-list-text-secondary: #616161;
+  --task-list-text-tertiary: #424242;
+  --task-list-text-link: #115ea3;
+  --task-list-page-title-size: 20px;
+  --task-list-page-title-weight: 600;
+  --task-list-page-title-line-height: 28px;
+  --task-list-page-subtitle-size: 14px;
+  --task-list-page-subtitle-weight: 400;
+  --task-list-page-subtitle-line-height: 20px;
+  --task-list-section-gap: 12px;
+  --task-list-section-title-size: 16px;
+  --task-list-section-title-weight: 600;
+  --task-list-section-title-line-height: 22px;
+  --task-list-trending-gap: 12px;
+  --task-list-card-bg: #ffffff;
+  --task-list-card-border: transparent;
+  --task-list-card-radius: 8px;
+  --task-list-card-shadow: 0px 2px 4px 0px rgba(0,0,0,0.14), 0px 0px 2px 0px rgba(0,0,0,0.12);
+  --task-list-card-footer-padding: 9px 12px;
+  --task-list-card-footer-gap: 4px;
+  --task-list-card-content-gap: 12px;
+  --task-list-card-title-size: 14px;
+  --task-list-card-title-weight: 600;
+  --task-list-card-title-line-height: 20px;
+  --task-list-card-subtitle-size: 12px;
+  --task-list-card-subtitle-weight: 400;
+  --task-list-card-subtitle-line-height: 16px;
+  --task-list-toolbar-gap: 0;
+  --task-list-grid-bg: #ffffff;
+  --task-list-grid-border: 1px solid #e0e0e0;
+  --task-list-grid-cell-padding: 8px;
+  --task-list-grid-cell-gap: 8px;
+  --task-list-task-title-size: 14px;
+  --task-list-task-title-weight: 400;
+  --task-list-task-title-line-height: 20px;
+  --task-list-task-description-size: 12px;
+  --task-list-task-description-weight: 400;
+  --task-list-task-description-line-height: 16px;
+  --task-list-user-gap: 8px;
+  --task-list-user-name-size: 14px;
+  --task-list-user-name-weight: 400;
+  --task-list-user-name-line-height: 20px;
+}
+
+/* Responsive Design Breakpoints */
+@media (max-width: 1366px) {
+  :root {
+    /* Desktop adjustments */
+    --industry-news-padding: 24px 32px;
+    --hero-padding: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    /* Tablet landscape adjustments */
+    --app-bar-width: 40px;
+    --industry-news-padding: 20px 24px;
+    --industry-news-left-width: 320px;
+    --industry-news-right-width: 620px;
+    --hero-padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    /* Tablet portrait adjustments */
+    --app-bar-width: 0px; /* Hide AppBar on smaller screens */
+    --industry-news-column-gap: 16px;
+    --industry-news-padding: 16px;
+    --industry-news-left-width: 100%;
+    --industry-news-right-width: 100%;
+    --hero-padding: 16px;
+    --news-grid-columns: 1; /* Single column layout */
+    --events-filmstrip-gap: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  :root {
+    /* Mobile adjustments */
+    --suite-header-height: 44px;
+    --suite-header-button-size: 44px;
+    --site-header-main-height: 80px;
+    --industry-news-padding: 12px;
+    --hero-padding: 12px;
+    --task-list-page-padding: 12px;
+    --task-list-trending-gap: 8px;
+    --task-list-page-gap: 24px;
+  }
+}
+
+.suite-header {
+  height: var(--suite-header-height);
+  background-color: var(--suite-header-brand-primary);
+}
+
+.site-header {
+  min-width: 1024px;
+}
